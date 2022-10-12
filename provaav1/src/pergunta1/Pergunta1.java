@@ -8,12 +8,12 @@ public class Pergunta1 {
             int valor = vetor[i];
             int j = i - 1;
 
-            while((j >= 1) && (valor > vetor[j])){
+            while((j >= 0) && (valor > vetor[j])){
                 aux = vetor[j+1];
                 vetor[j+1] = vetor[j];
                 vetor[j] = aux;
                 j = j-1;
-                if(j==0){
+                if(j==-1){
                     break;
                 }
 
